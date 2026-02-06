@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Cá Nhân Của Quang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { 
+            min-height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            color: white;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://i.pinimg.com/originals/65/52/63/65526369792463e2646279f64939a039.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container { width: 100%; max-width: 480px; padding: 40px 20px; text-align: center; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .profile-card img { width: 90px; height: 90px; border-radius: 50%; border: 2px solid #fff; object-fit: cover; }
+        .profile-info h2 { font-size: 22px; margin-bottom: 5px; }
+        .profile-info p { font-size: 14px; opacity: 0.9; margin: 2px 0; }
+
+        .section-title { font-size: 19px; font-weight: bold; text-align: left; margin-bottom: 15px; padding-left: 5px; }
+
+        /* KHUNG NHẠC SPOTIFY - Đã gắn đúng link mày gửi */
+        .spotify-box { width: 100%; border-radius: 12px; margin-bottom: 15px; overflow: hidden; }
+        iframe { border: none; width: 100%; height: 152px; }
+
+        footer { margin-top: 40px; font-size: 14px; font-weight: 500; opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-bottom: 30px; letter-spacing: 2px; font-size: 30px;">MY PROFILE</h1>
+
+        <div class="glass-card">
+            <img src="https://drive.google.com/thumbnail?id=1wRyIyEppoxSpXYQAIDX5TJS3Hi6Xvjt9&sz=500" alt="Avatar">
+            <div class="profile-info">
+                <h2>Nguyễn Minh Quang</h2>
+                <p>🎂 Sinh ngày: 20/12/2008</p>
+                <p>🏫 Trường: THPT Dương Xá</p>
+                <p>👥 Lớp: 12D5</p>
+                <p>🎬 Sở thích: Xem phim, nghe nhạc</p>
+            </div>
+        </div>
+
+        <div class="section-title">Nhạc tôi yêu thích</div>
+        
+        <div class="spotify-box">
+            <iframe src="https://open.spotify.com/playlist/68PKq8OvpLyqBVdmPi2zSR?si=S_Pd4GenS-2mr1gWYUmKUg" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="spotify-box">
+            <iframe src="https://open.spotify.com/playlist/4cL5mpbxDBJ0chCMgZpUDY?si=lw-bRdmaQGG_mNWpydc5gw&pi=h8_5TGB0SyqrF" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <footer>© 2026 - Trang Cá Nhân Của Quang</footer>
+    </div>
+</body>
+</html>
